@@ -1,15 +1,20 @@
-/.vs/Financas
-/Financas/bin/Debug/net8.0
-/Financas/obj
-/Financas.Services/bin/Debug/net8.0
-/Financas.Services/obj
-/Financas.Api/bin/Debug/net8.0
-/Financas.Infra/bin/Debug/net8.0
+# Ignorar arquivos e pastas do Visual Studio
+.vs/
+*.suo
+*.user
 
+# Ignorar arquivos de compilação e saída
+[Oo]bj/
+[Bb]in/
+*.dll
+*.pdb
+*.exe
+*.cache
 
-.dll
-.pdb
-.cache
-.exe
-/Financas/bin/Release/net8.0
-/.vs/Financas/FileContentIndex
+# Específico para suas pastas projetadas
+/Financas/bin/
+/Financas/obj/
+/Financas.Services/bin/
+/Financas.Services/obj/
+/Financas.Api/bin/
+/Financas.Infra/bin/
