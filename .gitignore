@@ -1,8 +1,10 @@
 /.vs/Financas
 /Financas/bin/Debug/net8.0
 /Financas/obj
-/Financas.Services/bin/Debug/ne8.0
+/Financas.Services/bin/Debug/net8.0
 /Financas.Services/obj
+/Financas.Api/bin/Debug/net8.0
+/Financas.Infra/bin/Debug/net8.0
 
 
 .dll
