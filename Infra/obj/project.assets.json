@@ -2755,11 +2755,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Estudos\\Financas\\Infra\\Infra.csproj",
+      "projectUniqueName": "C:\\Estudos\\Financas\\FinancasBack\\Infra\\Infra.csproj",
       "projectName": "Infra",
-      "projectPath": "C:\\Estudos\\Financas\\Infra\\Infra.csproj",
+      "projectPath": "C:\\Estudos\\Financas\\FinancasBack\\Infra\\Infra.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Estudos\\Financas\\Infra\\obj\\",
+      "outputPath": "C:\\Estudos\\Financas\\FinancasBack\\Infra\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

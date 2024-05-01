@@ -3,7 +3,7 @@
     "ContainingType": "Api.Controllers.UserController",
     "Method": "GetAllUsers",
     "RelativePath": "api/User",
-    "HttpMethod": "",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],

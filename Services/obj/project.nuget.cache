@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fvU0CvQ+lKmV5FfgQt+aYyPSXLbb/76I/O9XII8I8wb4xLk+B5+kgNvvHQFLkq6Ppc/q/mIJYShL51jr1h9JRg==",
+  "dgSpecHash": "I2BTZzTxStpij1QkFClrY+CGKstV710D6jde6X7mFBDg1b+fOAK5Hxj2aglblhmFyzgIxOuXet+vkDExab0iRA==",
   "success": true,
-  "projectFilePath": "C:\\Estudos\\Financas\\Services\\Services.csproj",
+  "projectFilePath": "C:\\Estudos\\Financas\\FinancasBack\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

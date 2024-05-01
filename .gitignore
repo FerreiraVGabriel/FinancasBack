@@ -1,0 +1,13 @@
+/.vs/Financas
+/Financas/bin/Debug/net8.0
+/Financas/obj
+/Financas.Services/bin/Debug/ne8.0
+/Financas.Services/obj
+
+
+.dll
+.pdb
+.cache
+.exe
+/Financas/bin/Release/net8.0
+/.vs/Financas/FileContentIndex

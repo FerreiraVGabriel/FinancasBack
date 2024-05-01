@@ -3208,11 +3208,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Estudos\\Financas\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Estudos\\Financas\\FinancasBack\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Estudos\\Financas\\Api\\Api.csproj",
+      "projectPath": "C:\\Estudos\\Financas\\FinancasBack\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Estudos\\Financas\\Api\\obj\\",
+      "outputPath": "C:\\Estudos\\Financas\\FinancasBack\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3234,8 +3234,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Estudos\\Financas\\Services\\Services.csproj": {
-              "projectPath": "C:\\Estudos\\Financas\\Services\\Services.csproj"
+            "C:\\Estudos\\Financas\\FinancasBack\\Services\\Services.csproj": {
+              "projectPath": "C:\\Estudos\\Financas\\FinancasBack\\Services\\Services.csproj"
             }
           }
         }

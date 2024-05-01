@@ -15,6 +15,7 @@ namespace Api.Controllers
             _userService = userService;
         }
 
+        [HttpGet]
         public async Task<object> GetAllUsers(CancellationToken cancellationToken)
         {
             var users = await _userService.GetAllUsers(cancellationToken);

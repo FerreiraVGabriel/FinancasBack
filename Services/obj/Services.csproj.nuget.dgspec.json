@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Estudos\\Financas\\Services\\Services.csproj": {}
+    "C:\\Estudos\\Financas\\FinancasBack\\Services\\Services.csproj": {}
   },
   "projects": {
-    "C:\\Estudos\\Financas\\Infra\\Infra.csproj": {
+    "C:\\Estudos\\Financas\\FinancasBack\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Estudos\\Financas\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Estudos\\Financas\\FinancasBack\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "C:\\Estudos\\Financas\\Infra\\Infra.csproj",
+        "projectPath": "C:\\Estudos\\Financas\\FinancasBack\\Infra\\Infra.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Estudos\\Financas\\Infra\\obj\\",
+        "outputPath": "C:\\Estudos\\Financas\\FinancasBack\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Estudos\\Financas\\Services\\Services.csproj": {
+    "C:\\Estudos\\Financas\\FinancasBack\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Estudos\\Financas\\Services\\Services.csproj",
+        "projectUniqueName": "C:\\Estudos\\Financas\\FinancasBack\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "C:\\Estudos\\Financas\\Services\\Services.csproj",
+        "projectPath": "C:\\Estudos\\Financas\\FinancasBack\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Estudos\\Financas\\Services\\obj\\",
+        "outputPath": "C:\\Estudos\\Financas\\FinancasBack\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -108,8 +108,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Estudos\\Financas\\Infra\\Infra.csproj": {
-                "projectPath": "C:\\Estudos\\Financas\\Infra\\Infra.csproj"
+              "C:\\Estudos\\Financas\\FinancasBack\\Infra\\Infra.csproj": {
+                "projectPath": "C:\\Estudos\\Financas\\FinancasBack\\Infra\\Infra.csproj"
               }
             }
           }
