@@ -4,6 +4,6 @@ namespace Infra.Interface
 {
     public interface IUserRepository: IBaseBaseRepository<User>
     {
-        Task<User> GetByEmail(string email, CancellationToken cancellationToken);
+        Task<User?> GetByUserName(CancellationToken cancellationToken, string userName);
     }
 }

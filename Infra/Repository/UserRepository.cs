@@ -18,9 +18,13 @@ namespace Infra.Repository
             _context = context;
         }
 
-        public Task<User> GetByEmail(string email, CancellationToken cancellationToken)
+        public async Task<User?> GetByUserName(CancellationToken cancellationToken, string userName)
         {
-            throw new NotImplementedException();
+            var user = await _context.Users
+                                     .Where(u => u.UserName == userName)
+                                     .FirstOrDefaultAsync(cancellationToken);
+            return user;
         }
+
     }
 }

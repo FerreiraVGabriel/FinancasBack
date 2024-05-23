@@ -17,5 +17,10 @@ namespace Services.Services
         {
             return await _userRepository.GetAll(cancellationToken);
         }
+
+        public async Task<User> GetByUserName(CancellationToken cancellationToken, string userName)
+        {
+            return await _userRepository.GetByUserName(cancellationToken, userName);
+        }
     }
 }

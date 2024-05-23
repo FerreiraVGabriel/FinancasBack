@@ -10,5 +10,6 @@ namespace Services.Interfaces
     public interface IUserService
     {
         Task<IEnumerable<User>> GetAllUsers(CancellationToken cancellationToken);
+        Task<User> GetByUserName(CancellationToken cancellationToken, string userName);
     }
 }
