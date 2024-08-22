@@ -147,3 +147,7 @@ C:\Estudos\Financas\FinancasBack\Api\obj\Debug\net8.0\refint\Api.dll
 C:\Estudos\Financas\FinancasBack\Api\obj\Debug\net8.0\Api.pdb
 C:\Estudos\Financas\FinancasBack\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\Estudos\Financas\FinancasBack\Api\obj\Debug\net8.0\ref\Api.dll
+C:\Estudos\Financas\FinancasBack\Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Estudos\Financas\FinancasBack\Api\bin\Debug\net8.0\AutoMapper.dll
+C:\Estudos\Financas\FinancasBack\Api\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Estudos\Financas\FinancasBack\Api\bin\Debug\net8.0\BCrypt.Net-Next.dll

@@ -1,13 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "5vk3qTaPTAE/i2aZi0ZPBU4r6x0qc/f7lWyGTOX0fyr6ZerZA3SfuW1WXuYIQU0PSAgbYofvriYLpaH73Fa0Pg==",
+  "dgSpecHash": "eTX1NVAoEs2PjlL5EWlXJReu1l/NMizir7L7JfMWejtupmyySCejVqe72ug1zUmkrawGnqCT6GPUlHE36+MhsQ==",
   "success": true,
   "projectFilePath": "C:\\Estudos\\Financas\\FinancasBack\\Api\\Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gabri\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.5\\microsoft.aspnetcore.authentication.jwtbearer.8.0.5.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.1\\microsoft.data.sqlclient.sni.runtime.5.1.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.4\\microsoft.entityframeworkcore.8.0.4.nupkg.sha512",

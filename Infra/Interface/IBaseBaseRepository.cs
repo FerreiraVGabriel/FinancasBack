@@ -10,10 +10,10 @@ namespace Infra.Interface
 {
     public interface IBaseBaseRepository<T> where T : Base
     {
-        void Create(T entity);
-        void Update(T entity);
-        void Delete(T entity);
-        Task<T> Get(int id, CancellationToken cancellationToken);
-        Task<List<T>> GetAll(CancellationToken cancellationToken);
+        Task CreateAsync(T entity);
+        Task UpdateAsync(T entity);
+        Task DeleteAsync(T entity);
+        Task<T> GetAsync(int id, CancellationToken cancellationToken);
+        Task<List<T>> GetAllAsync(CancellationToken cancellationToken);
     }
 }

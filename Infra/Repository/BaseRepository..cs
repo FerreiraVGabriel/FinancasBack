@@ -21,29 +21,33 @@ namespace Infra.Repository
             _entities = context.Set<TEntity>();
         }
 
-        public void Create(TEntity entity)
+        public async Task CreateAsync(TEntity entity) 
         {
             entity.DateCreated = DateTime.Now;
-            _context.Add(entity);
+            await _context.AddAsync(entity); 
+            await _context.SaveChangesAsync(); 
         }
 
-        public void Update(TEntity entity)
+        public async Task UpdateAsync(TEntity entity) 
         {
             entity.DateUpdated = DateTime.Now;
             _context.Update(entity);
+            await _context.SaveChangesAsync(); 
         }
 
-        public void Delete(TEntity entity)
+        public async Task DeleteAsync(TEntity entity) 
         {
             _context.Remove(entity);
+            await _context.SaveChangesAsync(); 
         }
 
-        public async Task<List<TEntity>> GetAll(CancellationToken cancellationToken)
+
+        public async Task<List<TEntity>> GetAllAsync(CancellationToken cancellationToken)
         {
             return await _context.Set<TEntity>().ToListAsync(cancellationToken);
         }
 
-        public async Task<TEntity> Get(int id, CancellationToken cancellationToken)
+        public async Task<TEntity> GetAsync(int id, CancellationToken cancellationToken)
         {
             return await _context.Set<TEntity>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
         }

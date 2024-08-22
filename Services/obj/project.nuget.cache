@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "NNZuc7VNTQLhOf0J6pa1qplfz/jP70dBbadEwY8m2GwkPwJwcZhT1x0lb2FRMd/g+NhwYny8jAG7mr0vN0z4Ag==",
+  "dgSpecHash": "lgpOpvFt7gNBfG3dI73tr4IQ8tXiY2RavnoDeVpfIRpikBEW29XjRmAQf4HkMC4pftwE4i//F6dI2bHbfBm7eA==",
   "success": true,
   "projectFilePath": "C:\\Estudos\\Financas\\FinancasBack\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gabri\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\gabri\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\gabri\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

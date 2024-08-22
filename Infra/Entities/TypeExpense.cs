@@ -1,16 +1,17 @@
 ﻿using Infra.Entidades;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Infra.Entities
 {
-    public class User: Base
+    public class TypeExpense : Base
     {
-        public string? Email { get; set; }
-        public string? Name { get; set; }
-        public string? PasswordHash { get; set; }
+        public string Nome { get; set; }
     }
+
+
 }

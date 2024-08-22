@@ -1,6 +1,8 @@
 ﻿using Infra.Entities;
 using Infra.Interface;
+using Microsoft.EntityFrameworkCore;
 using Services.Interfaces;
+using BCrypt.Net;
 
 namespace Services.Services
 {
@@ -13,14 +15,30 @@ namespace Services.Services
             _userRepository = userRepository;
         }
 
-        public async Task<IEnumerable<User>> GetAllUsers(CancellationToken cancellationToken)
+        public async Task<IEnumerable<User>> GetAllUsersAsync(CancellationToken cancellationToken)
         {
-            return await _userRepository.GetAll(cancellationToken);
+            return await _userRepository.GetAllAsync(cancellationToken);
         }
 
-        public async Task<User> GetByUserName(CancellationToken cancellationToken, string userName)
+        public async Task<User> GetByEmailAsync(CancellationToken cancellationToken, string userName)
         {
-            return await _userRepository.GetByUserName(cancellationToken, userName);
+            return await _userRepository.GetByEmailAsync(cancellationToken, userName);
+        }
+
+        public async Task<User> RegisterUserAsync(User user, string password)
+        {
+            try{
+                user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(password);
+
+               await  _userRepository.CreateAsync(user);
+
+                return user;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+            
         }
     }
 }

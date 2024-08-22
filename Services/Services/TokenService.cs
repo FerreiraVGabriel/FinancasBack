@@ -26,8 +26,8 @@ namespace Services.Services
         public string GenerateToken(User user)
         {
             CancellationToken tokenSource = new CancellationToken();
-            var userDataBase = _userService.GetByUserName(tokenSource, user.UserName);
-            if (user.UserName != userDataBase.Result.UserName)
+            var userDataBase = _userService.GetByEmailAsync(tokenSource, user.Email);
+            if (user.Email != userDataBase.Result.Email)
                 return String.Empty;
 
             var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"] ?? string.Empty));
@@ -41,7 +41,7 @@ namespace Services.Services
                 audience: audience,
                 claims: new[]
                 {
-                    new Claim(type: ClaimTypes.Name, value: user.UserName),
+                    new Claim(type: ClaimTypes.Name, value: user.Email),
                 },
                 expires: DateTime.Now.AddHours(2),
                 signingCredentials: signingCredentials);

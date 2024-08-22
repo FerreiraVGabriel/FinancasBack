@@ -8,8 +8,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "Infra.Entities.User",
+        "Name": "userInput",
+        "Type": "Api.Dtos.Input.UserInputDTO",
         "IsRequired": true
       }
     ],
@@ -27,6 +27,43 @@
     ]
   },
   {
+    "ContainingType": "Api.Controllers.AuthenticationController",
+    "Method": "Register",
+    "RelativePath": "api/Authentication/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userInput",
+        "Type": "Api.Dtos.Input.UserInputDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api.Controllers.TypeExpensiveController",
+    "Method": "GetAllTypeExpensive",
+    "RelativePath": "api/TypeExpensive/GetAllTypeExpensive",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Api.Controllers.UserController",
     "Method": "GetAllUsers",
     "RelativePath": "api/User/GetAllUsers",
@@ -38,8 +75,8 @@
   },
   {
     "ContainingType": "Api.Controllers.UserController",
-    "Method": "GetByUserName",
-    "RelativePath": "api/User/GetByUserName",
+    "Method": "GetByEmail",
+    "RelativePath": "api/User/GetByEmail",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

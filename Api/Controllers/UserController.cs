@@ -20,14 +20,14 @@ namespace Api.Controllers
         public async Task<object> GetAllUsers(CancellationToken cancellationToken)
         {
 
-            var users = await _userService.GetAllUsers(cancellationToken);
+            var users = await _userService.GetAllUsersAsync(cancellationToken);
             return Ok(users);
         }
 
-        [HttpGet("GetByUserName")]
-        public async Task<object> GetByUserName(CancellationToken cancellationToken,string userName)
+        [HttpGet("GetByEmail")]
+        public async Task<object> GetByEmail(CancellationToken cancellationToken,string userName)
         {
-            var user = await _userService.GetByUserName(cancellationToken, userName);
+            var user = await _userService.GetByEmailAsync(cancellationToken, userName);
             return Ok(user);
         }
 
