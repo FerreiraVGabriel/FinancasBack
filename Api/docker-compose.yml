@@ -33,3 +33,4 @@ volumes:
 networks:
   financas-networks:
     driver: bridge
+
