@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Services.Interfaces;
 using System.Security.Claims;
 
@@ -12,6 +13,7 @@ namespace Api.Controllers
         {
         }
 
+        [Authorize]
         [HttpGet("GetAllTypeExpensive")]
         public async Task<object> GetAllTypeExpensive(CancellationToken cancellationToken)
         {

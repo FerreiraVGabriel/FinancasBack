@@ -1,12 +1,13 @@
 ﻿using Api.Dtos.Input;
 using AutoMapper;
 using Infra.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Services.Interfaces;
 
 namespace Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("v1/[controller]")]
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
@@ -21,6 +22,7 @@ namespace Api.Controllers
             _mapper = mapper;
         }
 
+        [AllowAnonymous]
         [HttpPost(template: "Login", Name = "Login")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -44,6 +46,7 @@ namespace Api.Controllers
             return Ok(new { Token = token });
         }
 
+        [AllowAnonymous]
         [HttpPost("Register", Name = "Register")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

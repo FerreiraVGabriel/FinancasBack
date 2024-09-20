@@ -1,0 +1,35 @@
+﻿version: '3.8'
+
+services:
+  api:
+    container_name: financas-api
+    build:
+      context: .
+      dockerfile: Api/Dockerfile
+    ports:
+      - "4652:8080"
+    depends_on:
+      - financas-sql
+    networks:
+      - financas-networks
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  financas-sql:
+    image: mcr.microsoft.com/mssql/server:2019-CU14-ubuntu-20.04
+    environment:
+      - ACCEPT_EULA=1
+      - MSSQL_SA_PASSWORD=Senh@Forte123
+    volumes:
+      - financas-api-mssql-azure-edge:/var/opt/mssql
+    networks:
+      financas-networks:
+        aliases:
+          - sql
+
+volumes:
+  financas-api-mssql-azure-edge:
+
+networks:
+  financas-networks:
+    driver: bridge

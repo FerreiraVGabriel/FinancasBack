@@ -1,13 +1,10 @@
 using Api.Extensao;
 using Infra.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using AutoMapper;  // Adicionado para AutoMapper
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -79,12 +76,12 @@ builder.Services.AddDependencyInjection();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // Conexão banco
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Database")));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseDocker")));
 
 // Permissões api
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
 {
-    policy.WithOrigins("http://localhost:4200");  // Corrigido o array para string
+    policy.WithOrigins("http://localhost:4200");  
     policy.AllowAnyHeader();
     policy.AllowAnyMethod();
     policy.AllowCredentials();
