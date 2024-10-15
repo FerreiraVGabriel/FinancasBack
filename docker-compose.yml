@@ -20,6 +20,8 @@ services:
     environment:
       - ACCEPT_EULA=1
       - MSSQL_SA_PASSWORD=Senh@Forte123
+    ports:
+      - "1433:1433"  
     volumes:
       - financas-api-mssql-azure-edge:/var/opt/mssql
     networks:
