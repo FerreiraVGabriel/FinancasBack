@@ -10,32 +10,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Api.Controllers.UserController",
-    "Method": "GetAllUsers",
-    "RelativePath": "api/User/GetAllUsers",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Api.Controllers.UserController",
-    "Method": "GetByEmail",
-    "RelativePath": "api/User/GetByEmail",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "userName",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Api.Controllers.AuthenticationController",
     "Method": "Login",
     "RelativePath": "v1/Authentication/Login",
@@ -88,5 +62,31 @@
         "StatusCode": 500
       }
     ]
+  },
+  {
+    "ContainingType": "Api.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "v1/User/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.UserController",
+    "Method": "GetByEmail",
+    "RelativePath": "v1/User/GetByEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

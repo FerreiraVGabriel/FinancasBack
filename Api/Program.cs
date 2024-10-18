@@ -76,7 +76,8 @@ builder.Services.AddDependencyInjection();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 // Conexão banco
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseDocker")));
+//builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DatabaseDocker")));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("Database")));
 
 // Permissões api
 builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
