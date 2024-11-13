@@ -29,10 +29,22 @@ services:
         aliases:
           - sql
 
+  financas-front:
+    container_name: financas-front
+    image: financas-front
+    build:
+      context: ../FinancasFront
+      dockerfile: Dockerfile
+    ports:
+      - "4400:82"
+    depends_on:
+      - api
+    networks:
+      - financas-networks
+
 volumes:
   financas-api-mssql-azure-edge:
 
 networks:
   financas-networks:
     driver: bridge
-

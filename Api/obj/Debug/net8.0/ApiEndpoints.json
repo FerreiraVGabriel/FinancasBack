@@ -1,12 +1,48 @@
 [
   {
-    "ContainingType": "Api.Controllers.TypeExpensiveController",
+    "ContainingType": "Api.Controllers.TypeExpenseController",
     "Method": "GetAllTypeExpensive",
-    "RelativePath": "api/TypeExpensive/GetAllTypeExpensive",
+    "RelativePath": "api/TypeExpense",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api.Controllers.TypeExpenseController",
+    "Method": "Pagination",
+    "RelativePath": "api/TypeExpense/Pagination",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchTerm",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

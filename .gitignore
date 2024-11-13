@@ -60,3 +60,5 @@
 /.vs/Financas/v17/.futdcache.v2
 /.vs/ProjectEvaluation/financas.metadata.v7.bin
 /.vs/ProjectEvaluation/financas.projects.v7.bin
+/Services/obj/Debug/net8.0/Services.csproj.CoreCompileInputs.cache
+/.vs/Financas/DesignTimeBuild/.dtbcache.v2

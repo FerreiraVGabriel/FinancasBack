@@ -35,14 +35,16 @@ namespace Services.Services
             var audience = _configuration["Jwt:Audience"];
 
             var signingCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, user.Email),
+                new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()) // Adicione o userId aqui
+            };
 
             var tokenOptions = new JwtSecurityToken(
                 issuer: issuer,
                 audience: audience,
-                claims: new[]
-                {
-                    new Claim(type: ClaimTypes.Name, value: user.Email),
-                },
+                claims: claims,
                 expires: DateTime.Now.AddHours(2),
                 signingCredentials: signingCredentials);
 

@@ -10,8 +10,6 @@ namespace Infra.Entities
 {
     public class TypeExpense : Base
     {
-        public string Nome { get; set; }
+        public string Name { get; set; }
     }
-
-
 }
