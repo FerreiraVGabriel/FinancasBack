@@ -62,3 +62,16 @@
 /.vs/ProjectEvaluation/financas.projects.v7.bin
 /Services/obj/Debug/net8.0/Services.csproj.CoreCompileInputs.cache
 /.vs/Financas/DesignTimeBuild/.dtbcache.v2
+/Api/obj/Debug/net8.0/Api.assets.cache
+/Api/obj/Debug/net8.0/Api.csproj.CoreCompileInputs.cache
+/Api/obj/Debug/net8.0/Api.csproj.FileListAbsolute.txt
+/Api/obj/Debug/net8.0/ApiEndpoints.json
+/Api/obj/Api.csproj.nuget.dgspec.json
+/Api/obj/project.assets.json
+/Api/obj/project.nuget.cache
+/Api/bin/Debug/net8.0/Api.deps.json
+/Api/Controllers/TypeExpenseController.cs
+/Services/obj/project.assets.json
+/Services/obj/project.nuget.cache
+/Services/obj/Services.csproj.nuget.dgspec.json
+/Services/bin/Debug/net8.0/Services.deps.json

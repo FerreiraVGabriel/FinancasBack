@@ -8,12 +8,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using System.Text;
-using System.Threading.Tasks;
-using 
+using System.Threading.Tasks; 
 
 namespace Infra.Repository
 {
-    public class TypeExpenseRepository : BaseRepository<TypeExpense>, ITypeExpenseRepository
+    internal class TypeExpenseRepository : BaseRepository<TypeExpense>, ITypeExpenseRepository
     {
         private readonly AppDbContext _context;
         public TypeExpenseRepository(AppDbContext context) : base(context)
