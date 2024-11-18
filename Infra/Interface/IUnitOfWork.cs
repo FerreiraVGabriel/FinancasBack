@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Infra.Interface
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
         Task Commit(CancellationToken cancellationToken);
     }

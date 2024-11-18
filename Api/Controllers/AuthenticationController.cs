@@ -61,7 +61,7 @@ namespace Api.Controllers
 
             User user = _mapper.Map<UserInputDTO, User>(userInput);
 
-            var registeredUser = await _userService.RegisterUserAsync(user, userInput.Password);
+            var registeredUser = await _userService.RegisterUserAsync(cancellationToken,user, userInput.Password);
 
             return CreatedAtAction(nameof(Register), new { id = registeredUser.Id }, registeredUser);
         }

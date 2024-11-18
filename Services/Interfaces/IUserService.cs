@@ -11,6 +11,6 @@ namespace Services.Interfaces
     {
         Task<IEnumerable<User>> GetAllUsersAsync(CancellationToken cancellationToken);
         Task<User> GetByEmailAsync(CancellationToken cancellationToken, string userName);
-        Task<User> RegisterUserAsync(User user, string password);
+        Task<User> RegisterUserAsync(CancellationToken cancellationToken, User user, string password);
     }
 }

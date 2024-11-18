@@ -25,20 +25,20 @@ namespace Infra.Repository
         {
             entity.DateCreated = DateTime.Now;
             await _context.AddAsync(entity); 
-            await _context.SaveChangesAsync(); 
+            //await _context.SaveChangesAsync(); 
         }
 
         public async Task UpdateAsync(TEntity entity) 
         {
             entity.DateUpdated = DateTime.Now;
             _context.Update(entity);
-            await _context.SaveChangesAsync(); 
+            //await _context.SaveChangesAsync(); 
         }
 
         public async Task DeleteAsync(TEntity entity) 
         {
             _context.Remove(entity);
-            await _context.SaveChangesAsync(); 
+            //await _context.SaveChangesAsync(); 
         }
 
 
