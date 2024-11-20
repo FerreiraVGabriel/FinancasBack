@@ -75,3 +75,4 @@
 /Services/obj/project.nuget.cache
 /Services/obj/Services.csproj.nuget.dgspec.json
 /Services/bin/Debug/net8.0/Services.deps.json
+/Services/obj/Debug/net8.0/Services.assets.cache

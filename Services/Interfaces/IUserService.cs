@@ -1,4 +1,8 @@
-﻿using Infra.Entities;
+﻿using Api.Dtos.Input;
+using Api.Dtos.Output;
+using Infra.Entities;
+using OneOf;
+using Services.Erros;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +15,6 @@ namespace Services.Interfaces
     {
         Task<IEnumerable<User>> GetAllUsersAsync(CancellationToken cancellationToken);
         Task<User> GetByEmailAsync(CancellationToken cancellationToken, string userName);
-        Task<User> RegisterUserAsync(CancellationToken cancellationToken, User user, string password);
+        Task<OneOf<UserOutputDTO, BaseError>> RegisterUserAsync(CancellationToken cancellationToken, UserInputDTO userInputDTO);
     }
 }

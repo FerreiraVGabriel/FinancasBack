@@ -15,6 +15,7 @@ namespace Api.Extensao
             services.AddScoped<ITokenService, TokenService>();
 
             //REPOSITORIES
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUserRepository, UserRepository>();
 
             return services;

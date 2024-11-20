@@ -18,4 +18,7 @@ namespace Services.Erros
     public record TokenUserMismatchError()
         : BaseError("O token não corresponde ao usuário atual", ErrorType.Validation);
 
+    public record CreateUserError()
+    : BaseError("Erro ao criar o usuário", ErrorType.Validation);
+
 }
